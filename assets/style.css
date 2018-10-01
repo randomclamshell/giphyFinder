@@ -1,0 +1,22 @@
+* {
+  align-content: center;
+  padding: 5px;
+}
+
+body {
+  background: url("https://dzbc.org/wp-content/uploads/data/2018/2/15/pastel-colors-tumblr-background-beach-style-large-PIC-MCH094009.jpg");
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  margin-top: 5px;
+}
+
+.results {
+  border: 2px black solid;
+}
+
+.navbar {
+  background: skyblue;
+}
