@@ -4,7 +4,7 @@
 }
 
 body {
-  background: url("https://dzbc.org/wp-content/uploads/data/2018/2/15/pastel-colors-tumblr-background-beach-style-large-PIC-MCH094009.jpg");
+  background-color: antiquewhite;
   margin: 0;
   padding: 0;
 }
@@ -19,4 +19,8 @@ button {
 
 .navbar {
   background: skyblue;
+}
+
+.buttonDisplay {
+  border: 2px black solid;
 }
