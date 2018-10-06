@@ -1,10 +1,3 @@
-//first create functionality to add buttons
-
-// //here we will render a button for each search
-// renderButtons(userInput);
-
-
-
 
 //on the click of the button function goes here. since jquery is linked the dollar sign will come into place
 $(".addIt").on("click", function () {
@@ -12,19 +5,16 @@ $(".addIt").on("click", function () {
 
   var userInput = $("#search-input").val();
   console.log(userInput);
-  //first adding a function that will take the user input and will add this value to a button
 
   //variable for a new button to be rendered
   var btn = $("<button style='margin:5px;'>");
+
   //we will target the user input
   btn.text(userInput);
   btn.addClass('gifButton');
   btn.attr('data-value', userInput);
-  // console.log(btn);
-  //use the queryurl function and get function to retrieve the info we need
 
   $(".buttonDisplay").append(btn);
-
   $("#search-input").val("");
 
 });
