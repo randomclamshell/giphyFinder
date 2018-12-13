@@ -10,16 +10,19 @@ $(".addIt").on("click", function () {
   var btn = $("<button style='margin:5px;'>");
 
   //we will target the user input
+  if (userInput === "") {
+    alert("Enter something to search for!");
+    return false;
+  }
   btn.text(userInput);
   btn.addClass('gifButton');
   btn.attr('data-value', userInput);
 
   $(".buttonDisplay").append(btn);
   $("#search-input").val("");
-
+ 
 });
 
-console.log("gif button goes after this");
 
 $(document).on('click', '.gifButton', function () {
 
@@ -28,7 +31,7 @@ $(document).on('click', '.gifButton', function () {
   var buttonValue = $(this).attr("data-value");
   console.log(buttonValue);
 
-  var queryUrl = "http://api.giphy.com/v1/gifs/search?q=" + buttonValue + "&api_key=CkMebP8lfxtRR7SUAFicseQbP8Sa6zxA&limit=15";
+  var queryUrl = "https://api.giphy.com/v1/gifs/search?q=" + buttonValue + "&api_key=CkMebP8lfxtRR7SUAFicseQbP8Sa6zxA&limit=5";
 
   console.log(queryUrl);
 
